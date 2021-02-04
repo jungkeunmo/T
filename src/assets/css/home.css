@@ -1,0 +1,55 @@
+@import "./reset.css";
+
+@keyframes startBtnAni{
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(135, 209, 222),#fff);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .box__one,
+.box .box__two,
+.box .box__three {
+    margin-top: 50px;
+}
+
+.box .box__one span {
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 3px 2px 6px #fff;
+}
+
+.box .box__two span {
+    opacity: 0.5;
+}
+
+.box .box__three input {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    font-size: 24px;
+    background: linear-gradient(#dfe6e9,#b2bec3);
+    color: #fff;
+    border-bottom: #b2bec3 solid 2px;
+    padding: 5px;
+    border-radius: 5px;
+    animation: startBtnAni 1s infinite;
+}
